@@ -1,2 +1,2 @@
 # alx-higher_level_programming
-high level languge
+high level languge cool

@@ -2,9 +2,7 @@
 def islower(c):
     ascii = odr(c)
 
-    if ascii != 99:
-        return False
-    elif ascii == 99:
+    if 97 <= ascii <= 122:
         return True
     else:
         return False

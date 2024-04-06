@@ -1,3 +1,13 @@
 #!/usr/bin/python3
 def uppercase(str):
-    print(str.upper())
+    result = ""
+    i = 0
+    j = len(str)
+    while i < j:
+        if 'a' <= str <= 'z':
+            cap = ord(str[i]) - 32
+            result += chr(cap)
+        else:
+            result += str[i]
+        i += 1
+    print(result)

@@ -4,7 +4,7 @@ def uppercase(str):
     i = 0
     j = len(str)
     while i < j:
-        if 'a' <= str <= 'z':
+        if 'a' <= str[i] <= 'z':
             cap = ord(str[i]) - 32
             result += chr(cap)
         else:

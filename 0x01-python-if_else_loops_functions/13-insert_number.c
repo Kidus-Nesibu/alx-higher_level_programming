@@ -1,4 +1,7 @@
 #include"lists.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<stddef.h>
 /**
  * insert_node - inserts  the node at the correct order
  * @head: the head of the linked list

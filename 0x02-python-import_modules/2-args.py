@@ -9,4 +9,4 @@ while i < num_arg:
     print("{}: {}".format(i, args[i]))
     i += 1
 if __name__ == "__main__":
-    print_arguments()
+    sys.print_arguments()

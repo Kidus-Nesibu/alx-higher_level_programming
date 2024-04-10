@@ -7,7 +7,7 @@ i = 1
 if num_arg - 1 == 0:
     print("{} argument.".format(num_arg - 1))
 else:
-    print("{} argument:".format(num_arg - 1))
+    print("{} argument: ".format(num_arg - 1))
 while i < num_arg:
     print("{}: {}".format(i, args[i]))
     i += 1

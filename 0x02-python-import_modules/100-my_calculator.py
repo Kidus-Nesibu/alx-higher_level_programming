@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
+    import sys
 from calculator_1 import add, sub, mul, div
 
 def main():
@@ -25,6 +26,5 @@ def main():
 
     print(f"{a} {operator} {b} = {result}")
 
-if __name__ == "__main__":
-    main()
+main()
 

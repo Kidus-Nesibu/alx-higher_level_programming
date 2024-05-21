@@ -7,7 +7,7 @@ if __name__ == "__main__":
     operator = ['+', '-', '*', '/']
 
     if sys.argv[2] not in operator:
-        print("Unkown operator. Available operators: +, -, * and /")
+        print("Unknown operator. Only: +, -, * and / available")
         sys.exit(1)
 
     a = int(sys.argv[1])

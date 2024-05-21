@@ -9,6 +9,24 @@ if __name__ == "__main__":
     if sys.argv[2] not in operator:
         print("Unkown operator. Available operators: +, -, * and /")
         sys.exit(1)
+
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
     
-    print("{} {} {}".format(sys.argv[1], sys.argv[2], sys.argv[3]))
+    op  = sys.argv[2]
+
+    if op == '+':
+        result = a + b
+    elif op == '-':
+        result = a - b
+    elif op == '*':
+        result = a * b
+    elif op == '/':
+        if b == 0:
+            print("Error: Division by Zero")
+            sys.exit(1)
+        else:
+            result = a / b
+
+    print("{} {} {} = {}".format(sys.argv[1], sys.argv[2], sys.argv[3], result))
 

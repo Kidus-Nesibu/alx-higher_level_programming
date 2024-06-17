@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """This module defines A Square"""
+
+
 class Square:
     """Defines a Square class"""
     def __init__(self, size):
@@ -23,7 +25,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """Sets the value of the size instance 
+        """Sets the value of the size instance
         Args:
             value(int): Instance that will be changed by new value
         Raise:

@@ -14,7 +14,7 @@ def matrix_divided(matrix, div):
     """
     result = []
     if div == 0:
-        raise ZeroDivisionError("Division by zero is not allowed")
+        raise ZeroDivisionError("division by zero")
     length = len(matrix[0])
     for row in matrix:
         if length != len(row):
@@ -26,6 +26,6 @@ def matrix_divided(matrix, div):
                 new_row.append(round(item / div, 2))
             else:
                 raise TypeError("matrix must be a matrix (list of lists)"
-                                "of integers/floats")
+                                " of integers/floats")
         result.append(new_row)
     return result

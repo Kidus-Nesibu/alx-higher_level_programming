@@ -6,6 +6,7 @@ Defines a fucntion ``say_my_name(first_name, last_name="")``
 
 Usage
 =====
+    ``say_my_name(...)`` prints "My name is <first_name> <last_name>"
     >>> say_my_name = __import__('3-say_my_name').say_my_name
     >>> first_name1 = "Kidus"
     >>> last_name1 = "Nesibu"

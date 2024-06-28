@@ -22,8 +22,7 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     elif not isinstance(div, (float, int)):
-        raise TypeError("matrix must be a matrix (list of lists)"
-                        " of integers/floats")
+        raise TypeError("div must be a number")
 
     length = len(matrix[0])
 

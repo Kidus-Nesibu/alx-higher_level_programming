@@ -1,0 +1,6 @@
+# importing module 
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> first_name1 = Kidus
+>>> last_name1 = Nesibu
+>>> say_my_name(first_name1, last_name1)
+Kidus Nesibu

@@ -38,3 +38,16 @@ Traceback (most recent call last):
     ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+>>> matrix7 = []
+>>> div7 = 2
+>>> matrix_divided(matrix7, div7)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix8 = "string"
+>>> div8 = 8
+>>> matrix_divided(matrix8, div8)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats

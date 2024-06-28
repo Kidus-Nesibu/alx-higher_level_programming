@@ -5,13 +5,13 @@ How to use 3-say_my_name.py
 Defines a fucntion ``say_my_name(first_name, last_name="")``
 
 Usage
-=====
+=============================================
     ``say_my_name(...)`` prints "My name is <first_name> <last_name>"
     >>> say_my_name = __import__('3-say_my_name').say_my_name
     >>> first_name1 = "John"
     >>> last_name1 = "Smith"
     >>> say_my_name(first_name1, last_name1)
-    My name is Kidus Nesibu
+    My name is John Smith
     >>> first_name2 = 2
     >>> last_name2 = "Nesibu"
     >>> say_my_name(first_name2, last_name2)

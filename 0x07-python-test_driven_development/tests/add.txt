@@ -1,0 +1,53 @@
+# test.txt
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix1 = [[4, 8], [16, 20]]
+>>> div1 = 2
+>>> matrix_divided(matrix1, div1)
+[[2.0, 4.0], [8.0, 10.0]]
+
+>>> matrix2 = [[3.5, 7.0], [14.0, 28.0]]
+>>> div2 = 3.5
+>>> matrix_divided(matrix2, div2)
+[[1.0, 2.0], [4.0, 8.0]]
+
+>>> matrix3 = [[3.5, 7.0], [14.0, 28.0]]
+>>> div3 = 2.0
+>>> matrix_divided(matrix3, div3)
+[[1.75, 3.5], [7.0, 14.0]]
+
+>>> matrix4 = [[1, 2], [3, 4]]
+>>> div4 = 0
+>>> matrix_divided(matrix4, div4)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: division by zero
+
+>>> matrix5 = [[1, 2], [3, 4, 5]]
+>>> div5 = 2
+>>> matrix_divided(matrix5, div5)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix6 = [[1, 2], [3, '4']]
+>>> div6 = 2
+>>> matrix_divided(matrix6, div6)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix7 = []
+>>> div7 = 2
+>>> matrix_divided(matrix7, div7)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix8 = "string"
+>>> div8 = 8
+>>> matrix_divided(matrix8, div8)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats

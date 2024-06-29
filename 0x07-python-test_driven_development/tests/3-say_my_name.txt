@@ -34,6 +34,12 @@ The parameters ``first_name`` and ``last_name`` must be strings. Otherwise a Typ
 	TypeError: first_name must be a string
 
 ::
+
+	>>> say_my_name("kidus", 3)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+::
 	>>> say_my_name({"LeBron": 6, "Lames": 23}, 7.7)
 	Traceback (most recent call last):
 	TypeError: first_name must be a string

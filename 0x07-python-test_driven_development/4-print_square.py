@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """This module defines a function that draws a square using a hash symbol"""
+
+
 def print_square(size):
     """A function that prints a square using # symbol
     Args:
-        size: number of the printed hash 
+        size: number of the printed hash
     Raises:
         TypeError: if size is not an integer
         ValueError: if size is less than zero
@@ -14,7 +16,7 @@ def print_square(size):
         raise TypeError("size must be an integer")
     elif size < 0:
         raise ValueError("size must be >= 0")
-    
+
     for i in range(size):
         for i in range(size):
             print("#", end="")

@@ -38,7 +38,7 @@ Tht given number argument ``size`` must be an integer only
 
 	::
 
-    		>>> print_square(0)
+    		>>> print_square(-2)
     		Traceback (most recent call last):
     		ValueError: size must be >= 0
 

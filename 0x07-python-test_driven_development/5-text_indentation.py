@@ -33,4 +33,5 @@ def text_indentation(text):
             while count < len(text) and text[count] == " ":
                 count = count + 1
             continue
+
         count = count + 1

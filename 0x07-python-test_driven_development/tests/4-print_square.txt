@@ -37,7 +37,7 @@ Usage
 Invalid numbers
 ===============
 
-The given number argument ``size`` must be an integer only
+Tht given number argument ``size`` must be an integer only
 
 	::
 

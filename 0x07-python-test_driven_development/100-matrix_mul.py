@@ -72,5 +72,4 @@ def matrix_mul(m_a, m_b):
                 product += row[m] * column[m]
             my_row.append(product)
         matrix2.append(my_row)
-
     return matrix2

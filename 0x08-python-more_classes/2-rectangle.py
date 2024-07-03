@@ -54,5 +54,5 @@ class Rectangle:
         """Calculate perimeter of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             result = 0
-        result = (self.__height) * + (self.__width) * 2
+        result = (self.__height) * 2 + (self.__width) * 2
         return result

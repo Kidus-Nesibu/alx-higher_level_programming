@@ -8,4 +8,7 @@ def is_same_class(obj, a_class):
         obj: object created
         a_class: a class to check against
     """
-    return (type(obj) == a_class)
+    if type(obj) == a_class:
+        return True
+    else:
+        return False

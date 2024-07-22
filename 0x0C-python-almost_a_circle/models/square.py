@@ -7,11 +7,8 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """Represents a square"""
     def __init__(self, size, x=0, y=0, id=None):
-        self.size = size
-        self.x = x
-        self.y = y
-        self.id = id
         super().__init__(size, size, x, y, id)
+        self.size = size  # This will set width and height
 
     def __str__(self):
         """Defines a format for the string representation of the class"""
@@ -26,9 +23,9 @@ class Square(Rectangle):
     def size(self, value):
         """Sets the value for size"""
         if not isinstance(value, int):
-            raise TypeError("size must be an integer")
+            raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("size must be > 0")
+            raise ValueError("width must be > 0")
         self.__width = value
         self.__height = value
 

@@ -3,7 +3,7 @@
 
 
 class Base:
-    """Base class"""
+    """Class that count number of instances or id's"""
     __nb_objects = 0
 
     def __init__(self, id=None):

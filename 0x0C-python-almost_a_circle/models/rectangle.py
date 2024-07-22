@@ -13,42 +13,41 @@ class Rectangle(Base):
         super().__init__(id)
 
 # getter functions
-#==============================================================================
+# ==============================================================================
 
     @property
     def width(self):
         """gets the value of the width"""
         return self.__width
-    
+
     @property
     def height(self):
         """gets the value of the height"""
         return self.__height
-    
+
     @property
     def x(self):
         """gets the value of x"""
         return self.__x
-    
+
     @property
     def y(self):
         """gets the value of y"""
         return self.__y
 
-#setter funcitons
-#====================================================================================
+# setter funcitons
+# ====================================================================================
 
     @width.setter
     def width(self, value):
         """sets the value of the width"""
         if (type(value) is not int):
             raise TypeError("width must be an integer")
-        
+
         if value <= 0:
             raise ValueError("width must be > 0")
-        
-        self.__width = value
 
+        self.__width = value
 
     @height.setter
     def height(self, value):
@@ -60,7 +59,6 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
 
         self.__height = value
-
 
     @x.setter
     def x(self, value):
